@@ -4,13 +4,12 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import profilePic from "@/assets/Profile.png?url";
-import appCss from "../styles.css?url";
+import { ThemeProvider } from "@/components/theme-provider";
+import { MusicProvider } from "@/components/MusicProvider";
 
 function NotFoundComponent() {
   return (
@@ -70,49 +69,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Akshansh Sharma" },
-      { name: "description", content: "Portfolio of Akshansh Sharma — engineer and builder." },
-      { name: "author", content: "Akshansh Sharma" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [
-      { rel: "icon", href: profilePic },
-      { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap",
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
-import { ThemeProvider } from "@/components/theme-provider";
-import { MusicProvider } from "@/components/MusicProvider";
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

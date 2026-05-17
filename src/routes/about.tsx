@@ -147,7 +147,7 @@ function AboutPage() {
                   <ul className="space-y-5">
                     {group.items.map((item) => (
                       <li key={item.name} className="group flex items-center gap-3">
-                        <div className="relative size-5 opacity-40 grayscale transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0">
+                        <div className="relative size-5 md:opacity-40 md:grayscale transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0">
                           <img 
                             src={`https://cdn.simpleicons.org/${item.icon}`} 
                             alt=""

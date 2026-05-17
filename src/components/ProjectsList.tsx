@@ -75,11 +75,11 @@ export function ProjectsList({ limit }: { limit?: number }) {
 
             {/* Logo instead of arrows */}
             <div className="col-span-12 md:col-span-2 flex md:justify-end items-start pt-1">
-              <div className="relative size-12 md:size-14 overflow-hidden rounded-sm border border-border/40 bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
+              <div className={`relative size-12 md:size-14 overflow-hidden rounded-sm border border-border/40 ${isDarkMode ? 'bg-white/95' : 'bg-surface'} md:grayscale md:group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700`}>
                 <img 
                   src={(isDarkMode && item.logoDark) ? item.logoDark : item.logo} 
                   alt={`${item.title} Logo`}
-                  className={`size-full object-cover p-2 ${isDarkMode && !item.logoDark ? 'invert brightness-200' : ''}`}
+                  className="size-full object-cover p-2"
                 />
               </div>
             </div>

@@ -184,6 +184,22 @@
   .animate-revolve { animation: revolve 6s linear infinite; }
 }
 
+/* View Transition API Refinements */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+  display: block;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 999;
+}
+
 /* Lenis CSS */
 html.lenis, html.lenis body {
   height: auto;

@@ -3,7 +3,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { projects } from "@/lib/projects";
 import { ScrollLine } from "@/components/ScrollLine";
-import { useRef, useState, useEffect, Suspense, lazy } from "react";
+import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Github, ArrowUpRight } from "lucide-react";

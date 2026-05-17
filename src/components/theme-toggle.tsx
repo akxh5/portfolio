@@ -4,9 +4,51 @@ import { useTheme } from "./theme-provider";
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
+  const toggleTheme = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const isAppearanceTransition =
+      // @ts-ignore
+      document.startViewTransition &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!isAppearanceTransition) {
+      setTheme(theme === "dark" ? "light" : "dark");
+      return;
+    }
+
+    const x = event.clientX;
+    const y = event.clientY;
+    const endRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y)
+    );
+
+    // @ts-ignore
+    const transition = document.startViewTransition(() => {
+      setTheme(theme === "dark" ? "light" : "dark");
+    });
+
+    transition.ready.then(() => {
+      const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+      ];
+      
+      document.documentElement.animate(
+        {
+          clipPath: clipPath,
+        },
+        {
+          duration: 500,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      );
+    });
+  };
+
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={toggleTheme}
       className="relative p-2 rounded-full hover:bg-surface transition-colors duration-300 group"
       aria-label="Toggle theme"
     >

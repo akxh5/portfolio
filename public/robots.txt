@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://akxh5.me/sitemap.xml
+
+# Block common junk paths
+Disallow: /src/
+Disallow: /.git/
+Disallow: /node_modules/

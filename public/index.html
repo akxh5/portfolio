@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="image" href="/src/assets/Profile.webp" fetchpriority="high" />
 
     <!-- ════════════════════════════════════════
          PRIMARY META
@@ -42,8 +43,8 @@
     <!-- ════════════════════════════════════════
          FAVICON & ICONS
     ════════════════════════════════════════ -->
-    <link rel="icon" type="image/png" href="/src/assets/Profile.png" />
-    <link rel="apple-touch-icon" href="/src/assets/Profile.png" />
+    <link rel="icon" type="image/webp" href="/src/assets/Profile.webp" />
+    <link rel="apple-touch-icon" href="/src/assets/Profile.webp" />
 
     <!-- ════════════════════════════════════════
          STRUCTURED DATA — Person (JSON-LD)
@@ -150,9 +151,11 @@
     <!-- ════════════════════════════════════════
          FONTS
     ════════════════════════════════════════ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
   </head>
   <body>
     <div id="root"></div>

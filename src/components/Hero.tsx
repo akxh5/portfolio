@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import profilePic from "@/assets/Profile.png";
-import timelessCover from "@/assets/Timeless.jpg";
+import profilePic from "@/assets/Profile.webp";
+import timelessCover from "@/assets/Timeless.webp";
 import faithCover from "@/assets/Faith.jpg";
 import afterHoursCover from "@/assets/After Hours.jpg";
 import timelessAudio from "@/assets/The Weeknd, Playboi Carti - Timeless (Official Lyric Video).mp3";

@@ -7,7 +7,7 @@ import {
 } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { SmoothScroll } from "@/components/SmoothScroll";
-import profilePic from "@/assets/Profile.png?url";
+import profilePic from "@/assets/Profile.webp?url";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MusicProvider } from "@/components/MusicProvider";
 

@@ -1,6 +1,6 @@
 import superteamLogo from "@/assets/Superteamin.jpg";
-import turbineLogo from "@/assets/Turbine.jpg";
-import wormholeBlack from "@/assets/wormhole-black.png";
+import turbineLogo from "@/assets/Turbine.webp";
+import wormholeBlack from "@/assets/wormhole-black.webp";
 
 export type Involvement = {
   id: string;

@@ -6,6 +6,8 @@ import afterHoursCover from "@/assets/After Hours.jpg";
 import timelessAudio from "@/assets/The Weeknd, Playboi Carti - Timeless (Official Lyric Video).mp3";
 import faithAudio from "@/assets/The Weeknd - Faith (Audio).mp3";
 import afterHoursAudio from "@/assets/The Weeknd - After Hours (Audio).mp3";
+import heroBgWebm from "@/assets/hero-bg.webm";
+import heroBgMp4 from "@/assets/hero-bg.mp4";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Play, Pause, SkipForward } from "lucide-react";
@@ -82,14 +84,11 @@ export function Hero() {
           muted
           loop
           playsInline
-          preload="metadata"
-          poster=""
+          preload="auto"
           aria-hidden
         >
-          <source
-            src="https://videos.pexels.com/video-files/3129957/3129957-uhd_3840_2160_25fps.mp4"
-            type="video/mp4"
-          />
+          <source src={heroBgWebm} type="video/webm" />
+          <source src={heroBgMp4} type="video/mp4" />
         </video>
 
         {/* Tonal layering */}

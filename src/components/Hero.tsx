@@ -6,8 +6,6 @@ import afterHoursCover from "@/assets/After Hours.jpg";
 import timelessAudio from "@/assets/The Weeknd, Playboi Carti - Timeless (Official Lyric Video).mp3";
 import faithAudio from "@/assets/The Weeknd - Faith (Audio).mp3";
 import afterHoursAudio from "@/assets/The Weeknd - After Hours (Audio).mp3";
-import heroBgWebm from "@/assets/hero-bg.webm";
-import heroBgMp4 from "@/assets/hero-bg.mp4";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Play, Pause, SkipForward } from "lucide-react";
@@ -76,22 +74,8 @@ export function Hero() {
 
   return (
     <section ref={container} className="relative min-h-[100svh] w-full overflow-hidden grain">
-      {/* Ambient looping video — low opacity atmosphere */}
+      {/* Ambient atmosphere — tonal layering */}
       <div className="hero-bg absolute inset-0 -z-10">
-        <video
-          className="h-full w-full object-cover drift opacity-[0.22]"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden
-        >
-          <source src={heroBgWebm} type="video/webm" />
-          <source src={heroBgMp4} type="video/mp4" />
-        </video>
-
-        {/* Tonal layering */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(77,163,255,0.08),transparent_55%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_90%,rgba(39,24,126,0.35),transparent_60%)]" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/70 to-background" />

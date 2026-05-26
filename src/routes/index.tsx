@@ -15,15 +15,24 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Product-oriented developer exploring systems, interfaces, and emerging technologies. Beyond Building: Communities, research, fellowships, and technical ecosystems.",
+          "Akshansh Sharma (akxh5) — product-oriented engineer building systems, interfaces, and emerging-tech products. Creator of syn8x, Oper8a, TerraLedger, Arch1v.",
       },
       { property: "og:title", content: "Akshansh Sharma — Engineer & Builder" },
       {
         property: "og:description",
         content:
-          "Communities, research, fellowships, and technical ecosystems I’ve been part of.",
+          "Product-oriented engineer building systems, interfaces, and emerging-tech products. Creator of syn8x, Oper8a, TerraLedger, and Arch1v.",
+      },
+      { property: "og:url", content: "https://akxh5.me/" },
+      { property: "og:image", content: "https://akxh5.me/og-image.png" },
+      { name: "twitter:title", content: "Akshansh Sharma — Engineer & Builder" },
+      {
+        name: "twitter:description",
+        content:
+          "Product-oriented engineer building systems, interfaces, and emerging-tech products. Creator of syn8x, Oper8a, TerraLedger, and Arch1v.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://akxh5.me/" }],
   }),
   component: Index,
 });

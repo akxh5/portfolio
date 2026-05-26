@@ -7,18 +7,27 @@ import { InteractiveText } from "@/components/InteractiveText";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Akshansh Sharma" },
+      { title: "About — Akshansh Sharma (akxh5)" },
       {
         name: "description",
         content:
-          "Developer and product thinker building technically thoughtful products. Currently exploring AI systems and interface architecture.",
+          "Learn about Akshansh Sharma — his background, tech stack, and engineering philosophy. Involved with Superteam India, Wormhole Foundation, and Solana Turbine.",
       },
-      { property: "og:title", content: "About — Akshansh Sharma" },
+      { property: "og:title", content: "About — Akshansh Sharma (akxh5)" },
       {
         property: "og:description",
-        content: "Developer and product thinker interested in systems, infrastructure, and technical craft.",
+        content:
+          "Background, tech stack, and engineering philosophy of Akshansh Sharma (akxh5). Superteam India · Wormhole Foundation · Solana Turbine.",
+      },
+      { property: "og:url", content: "https://akxh5.me/about" },
+      { name: "twitter:title", content: "About — Akshansh Sharma (akxh5)" },
+      {
+        name: "twitter:description",
+        content:
+          "Background, tech stack, and engineering philosophy of Akshansh Sharma (akxh5).",
       },
     ],
+    links: [{ rel: "canonical", href: "https://akxh5.me/about" }],
   }),
   component: AboutPage,
 });

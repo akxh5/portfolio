@@ -10,17 +10,27 @@ import { useGSAP } from "@gsap/react";
 export const Route = createFileRoute("/writing")({
   head: () => ({
     meta: [
-      { title: "Writing — Akshansh Sharma" },
+      { title: "Writing — Akshansh Sharma (akxh5)" },
       {
         name: "description",
-        content: "Research notes, protocol breakdowns, and long-form observations across systems and infrastructure.",
+        content:
+          "Articles and writing by Akshansh Sharma (akxh5) on software engineering, systems, blockchain, and product development.",
       },
-      { property: "og:title", content: "Writing — Akshansh Sharma" },
+      { property: "og:title", content: "Writing — Akshansh Sharma (akxh5)" },
       {
         property: "og:description",
-        content: "An archival log of research and technical writing.",
+        content:
+          "Articles by Akshansh Sharma on software engineering, systems, and emerging tech.",
+      },
+      { property: "og:url", content: "https://akxh5.me/writing" },
+      { name: "twitter:title", content: "Writing — Akshansh Sharma (akxh5)" },
+      {
+        name: "twitter:description",
+        content:
+          "Articles by Akshansh Sharma (akxh5) on engineering and emerging tech.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://akxh5.me/writing" }],
   }),
   component: WritingPage,
 });

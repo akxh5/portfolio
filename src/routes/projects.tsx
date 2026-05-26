@@ -48,18 +48,33 @@ const GitHubCalendarComponent = ({ username, theme, colorScheme }: { username: s
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Built & Building — Akshansh Sharma" },
+      { title: "Projects — syn8x, Oper8a, TerraLedger, Arch1v | Akshansh Sharma" },
       {
         name: "description",
         content:
-          "Products, systems, and ideas explored through code by Akshansh Sharma.",
+          "Projects built by Akshansh Sharma (akxh5): syn8x, Oper8a, TerraLedger, Arch1v — spanning systems, web interfaces, and blockchain infrastructure.",
       },
-      { property: "og:title", content: "Built & Building — Akshansh Sharma" },
+      {
+        property: "og:title",
+        content: "Projects — syn8x, Oper8a, TerraLedger, Arch1v | Akshansh Sharma",
+      },
       {
         property: "og:description",
-        content: "An archive of real technical work and evolving systems.",
+        content:
+          "syn8x · Oper8a · TerraLedger · Arch1v — built by Akshansh Sharma (akxh5).",
+      },
+      { property: "og:url", content: "https://akxh5.me/projects" },
+      {
+        name: "twitter:title",
+        content: "Projects — syn8x, Oper8a, TerraLedger, Arch1v | Akshansh Sharma",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "syn8x · Oper8a · TerraLedger · Arch1v — built by Akshansh Sharma (akxh5).",
       },
     ],
+    links: [{ rel: "canonical", href: "https://akxh5.me/projects" }],
   }),
   component: ProjectsPage,
 });

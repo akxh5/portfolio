@@ -6,17 +6,26 @@ import { Mail, Github, Twitter, Linkedin } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Akshansh Sharma" },
+      { title: "Contact — Akshansh Sharma (akxh5)" },
       {
         name: "description",
-        content: "Get in touch with Akshansh Sharma — email, GitHub, X, LinkedIn.",
+        content:
+          "Get in touch with Akshansh Sharma (akxh5). Find him on GitHub @akxh5, X/Twitter @akxh_5, and LinkedIn.",
       },
-      { property: "og:title", content: "Contact — Akshansh Sharma" },
+      { property: "og:title", content: "Contact — Akshansh Sharma (akxh5)" },
       {
         property: "og:description",
-        content: "Open to interesting conversations around systems, products, and emerging technologies.",
+        content:
+          "Reach Akshansh Sharma on GitHub @akxh5, X/Twitter @akxh_5, or LinkedIn.",
+      },
+      { property: "og:url", content: "https://akxh5.me/contact" },
+      { name: "twitter:title", content: "Contact — Akshansh Sharma (akxh5)" },
+      {
+        name: "twitter:description",
+        content: "Reach Akshansh Sharma on GitHub @akxh5 or X/Twitter @akxh_5.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://akxh5.me/contact" }],
   }),
   component: ContactPage,
 });

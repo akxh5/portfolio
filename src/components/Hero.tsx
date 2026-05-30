@@ -128,7 +128,7 @@ export function Hero() {
                 href="mailto:aksh11ansh@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Akshansh%20Sharma&body=Hi%20Akshansh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20wanted%20to%20reach%20out%20regarding%3A%0A%0A%5B%20%5D%20A%20project%20collaboration%0A%5B%20%5D%20Freelance%20opportunity%0A%5B%20%5D%20Full-time%20role%0A%5B%20%5D%20Consulting%20%2F%20technical%20discussion%0A%5B%20%5D%20Something%20else%0A%0AA%20little%20context%3A%0A%E2%80%94%0A%0ATimeline%20%2F%20expectations%3A%0A%E2%80%94%0A%0ABest%2C%0A%5BName%5D"
                 className="relative z-10 block px-3 py-1.5 rounded-[1px] bg-background text-foreground transition-colors duration-300 hover:text-foreground group-hover/hire:bg-background/90"
               >
-                Hire Me
+                Let's Talk
               </a>
             </div>
           </div>

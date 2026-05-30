@@ -92,8 +92,8 @@ export const projects: Project[] = [
     tags: ["Monitoring", "SHA256", "Infrastructure", "Systems"],
     github: "https://github.com/akxh5/oper8a",
     live: {
-      url: "https://oper8a.vercel.app",
-      label: "Live Preview",
+      url: "https://oper8a.up.railway.app/",
+      label: "Live For Institutions",
     },
   },
   {

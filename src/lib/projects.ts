@@ -77,8 +77,8 @@ export const projects: Project[] = [
     tags: ["Web3", "Infrastructure", "Protocols", "AI Systems"],
     github: "https://github.com/akxh5/syn8x-terminal-web",
     live: {
-      url: "https://syn8x.tech",
-      label: "Live System",
+      url: "https://syn8x.vercel.app",
+      label: "Agency",
     },
     featured: true,
   },

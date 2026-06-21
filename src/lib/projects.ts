@@ -111,17 +111,17 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "arch1v",
-    index: "04",
-    title: "Arch1v",
-    status: "Finished",
-    description:
-      "A lightweight archival and file-organization system designed to automatically structure, archive, and detect duplicate files across local environments.",
-    tags: ["Archive", "File Systems", "Deduplication", "Cross-platform"],
-    github: "https://github.com/akxh5/Arch1v",
-    live: {
-      url: "https://github.com/akxh5/Arch1v/releases/tag/v1.0",
-      label: "Release v1.0",
-    },
+  id: "akshansh-experience",
+  index: "04",
+  title: "The Akshansh Experience",
+  status: "Published",
+  description:
+    "A digital poetry and storytelling platform built around curated collections, editorial sequencing, and immersive reading experiences. Designed as an exploration of memory, emotion, and interface design.",
+  tags: ["Design", "Writing", "Editorial", "Experience"],
+  github: "https://github.com/akxh5/the-akshansh-experience",
+  live: {
+    url: "https://the-akshansh-experience.vercel.app",
+    label: "Read & Feel",
   },
+}
 ];

@@ -1,6 +1,7 @@
 import superteamLogo from "@/assets/Superteamin.jpg";
 import turbineLogo from "@/assets/Turbine.webp";
 import wormholeBlack from "@/assets/wormhole-black.webp";
+import stellarLogo from "@/assets/stellarLogo.png";
 
 export type Involvement = {
   id: string;
@@ -64,6 +65,17 @@ export const involvements: Involvement[] = [
     tags: ["Research", "SIMDs", "Solana", "Infrastructure"],
     logo: turbineLogo,
   },
+  {
+  id: "stellar",
+  index: "04",
+  period: "Jun 2026 — Present",
+  title: "Ambassador — Stellar India",
+  role: "Ecosystem Growth",
+  description:
+    "Supporting ecosystem expansion through developer education, community initiatives, and builder-focused programs within Stellar’s open financial network.",
+  tags: ["Stellar", "Ecosystem", "Community", "Education"],
+  logo: stellarLogo,
+},
 ];
 
 export const projects: Project[] = [

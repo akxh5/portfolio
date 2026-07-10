@@ -33,7 +33,7 @@ export const Route = createFileRoute("/contact")({
 const channels = [
   { label: "Email", value: "aksh11ansh@gmail.com", href: "mailto:aksh11ansh@gmail.com", icon: Mail },
   { label: "GitHub", value: "github.com/akxh5", href: "https://github.com/akxh5", icon: Github },
-  { label: "X / Twitter", value: "@akxh_5", href: "https://x.com/akshansh", icon: Twitter },
+  { label: "X / Twitter", value: "@akshansh", href: "https://x.com/akshansh", icon: Twitter },
   { label: "LinkedIn", value: "in/akxh5", href: "https://linkedin.com/in/akxh5", icon: Linkedin },
 ];
 

@@ -10,19 +10,19 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Get in touch with Akshansh Sharma (akxh5). Find him on GitHub @akxh5, X/Twitter @akxh_5, and LinkedIn.",
+          "Get in touch with Akshansh Sharma (akxh5). Find him on GitHub @akxh5, X/Twitter @akshansh, and LinkedIn.",
       },
       { property: "og:title", content: "Contact — Akshansh Sharma (akxh5)" },
       {
         property: "og:description",
         content:
-          "Reach Akshansh Sharma on GitHub @akxh5, X/Twitter @akxh_5, or LinkedIn.",
+          "Reach Akshansh Sharma on GitHub @akxh5, X/Twitter @akshansh, or LinkedIn.",
       },
       { property: "og:url", content: "https://akxh5.me/contact" },
       { name: "twitter:title", content: "Contact — Akshansh Sharma (akxh5)" },
       {
         name: "twitter:description",
-        content: "Reach Akshansh Sharma on GitHub @akxh5 or X/Twitter @akxh_5.",
+        content: "Reach Akshansh Sharma on GitHub @akxh5 or X/Twitter @akshansh.",
       },
     ],
     links: [{ rel: "canonical", href: "https://akxh5.me/contact" }],
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/contact")({
 const channels = [
   { label: "Email", value: "aksh11ansh@gmail.com", href: "mailto:aksh11ansh@gmail.com", icon: Mail },
   { label: "GitHub", value: "github.com/akxh5", href: "https://github.com/akxh5", icon: Github },
-  { label: "X / Twitter", value: "@akxh_5", href: "https://x.com/akxh_5", icon: Twitter },
+  { label: "X / Twitter", value: "@akxh_5", href: "https://x.com/akshansh", icon: Twitter },
   { label: "LinkedIn", value: "in/akxh5", href: "https://linkedin.com/in/akxh5", icon: Linkedin },
 ];
 

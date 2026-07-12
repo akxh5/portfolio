@@ -49,4 +49,22 @@ export const writings: WritingEntry[] = [
     link: "https://open.substack.com/pub/elysiumre/p/how-monad-rebuilt-the-evm-for-speed",
     cta: "Read Essay →",
   },
+  {
+    id: "determinism-character",
+    index: "05",
+    title: "Determinism Is a Character Trait.",
+    description: "Ask a security team when they last thought about a contract or a program, and most will tell you about the audit. A fixed date, a fixed scope, a report that was ...",
+    platform: "X · Thread",
+    link: "https://x.com/akshansh/status/2073038101249966159",
+    cta: "Read Thread →",
+  },
+  {
+    id: "money-weak-point",
+    index: "06",
+    title: "The Money Was Never the Weak Point.",
+    description: "Two of the largest DeFi losses in history happened eighteen days apart this year, and neither one started with a line of bad code....",
+    platform: "X · Thread",
+    link: "https://x.com/akshansh/status/2074424637505835325",
+    cta: "Read Thread →",
+  },
 ];

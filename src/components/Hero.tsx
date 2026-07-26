@@ -96,7 +96,7 @@ export function Hero() {
           </p>
 
 
-          <div className="hero-meta mt-12 flex flex-wrap items-center gap-y-4 gap-x-6 font-mono text-[10px] md:text-[11px] tracking-[0.16em] uppercase text-muted-foreground">
+          <div className="hero-meta mt-12 flex flex-wrap items-center gap-y-4 gap-x-6 font-mono text-[10px] md:text-[11px] tracking-[0.16em] uppercase text-muted-foreground max-w-full">
             <span className="flex items-center gap-2.5">
               <span className="relative size-3.5 md:size-4 rounded-full overflow-hidden border border-foreground/10 shadow-sm shrink-0">
                 <div className="absolute top-0 inset-x-0 h-[33.33%] bg-[#FF9933]" />

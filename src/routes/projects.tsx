@@ -239,7 +239,7 @@ function ProjectsPage() {
                 <span>GitHub Contribution Graph // akxh5</span>
                 <div className="h-px flex-1 bg-border/30" />
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-x-auto max-w-full">
                 <GitHubCalendarComponent 
                   username="akxh5" 
                   theme={ghTheme}

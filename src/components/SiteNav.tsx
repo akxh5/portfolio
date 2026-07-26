@@ -48,13 +48,18 @@ export function SiteNav() {
     <header ref={headerRef} className="fixed top-0 inset-x-0 z-50">
       <div className="absolute inset-0 bg-background/30 backdrop-blur-xl border-b border-foreground/[0.04] -z-10" />
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-5 flex items-center justify-between relative z-[70]">
-        <div className="flex items-center gap-6">
+        <div className="w-full md:w-auto flex items-center justify-between md:justify-start md:gap-6">
+          <div className="order-1 md:order-2">
+            <ThemeToggle />
+          </div>
+
+          <div className="order-2 md:order-1">
           <Link to="/" aria-label="Akshansh Sharma — Home" className="group inline-flex items-center relative">
             <span className="relative block size-8 rounded-full overflow-hidden border border-border-strong/60 ring-1 ring-foreground/[0.04] shadow-[0_2px_10px_-4px_rgba(0,0,0,0.6)]">
               <img src={profilePic} alt="" aria-hidden className="h-full w-full object-cover transition-opacity duration-700" />
             </span>
           </Link>
-          <ThemeToggle />
+          </div>
         </div>
         <nav className="hidden md:flex items-center">
           {links.map((l, index) => (

@@ -84,8 +84,6 @@ const stackGroups = [
 function AboutPage() {
   return (
     <main className="relative bg-background text-foreground min-h-screen">
-      <SiteNav />
-
       {/* Intro Section */}
       <section className="mx-auto max-w-[1400px] pt-24 md:pt-44 pb-16 px-6 md:px-10">
         <div className="grid grid-cols-12 gap-6">

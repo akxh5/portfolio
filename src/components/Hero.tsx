@@ -194,7 +194,7 @@ export function Hero() {
             <div className="flex items-center gap-3">
               <button 
                 onClick={() => setIsPlaying(!isPlaying)}
-                className="relative size-12 rounded-sm overflow-hidden border border-border-strong/40 shadow-sm group/player transition-transform duration-500 hover:scale-105 active:scale-95"
+                className="relative size-8 md:size-12 rounded-sm overflow-hidden border border-border-strong/40 shadow-sm group/player transition-transform duration-500 hover:scale-105 active:scale-95 shrink-0"
                 aria-label={isPlaying ? "Pause" : "Play"}
               >
                 <img 
@@ -204,9 +204,9 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-background/20 backdrop-blur-[1px] opacity-0 group-hover/player:opacity-100 transition-opacity">
                   {isPlaying ? (
-                    <Pause className="size-5 text-white fill-white" />
+                    <Pause className="size-3.5 md:size-5 text-white fill-white" />
                   ) : (
-                    <Play className="size-5 text-white fill-white ml-0.5" />
+                    <Play className="size-3.5 md:size-5 text-white fill-white ml-0.5" />
                   )}
                 </div>
               </button>

@@ -73,7 +73,7 @@ export function Hero() {
   }, { scope: container });
 
   return (
-    <section ref={container} className="relative min-h-[100svh] w-full overflow-hidden grain">
+    <section ref={container} className="relative w-full md:min-h-[100svh] overflow-hidden grain">
       {/* Ambient atmosphere — tonal layering */}
       <div className="hero-bg absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(77,163,255,0.08),transparent_55%)]" />

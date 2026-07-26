@@ -116,18 +116,6 @@
 
   * {
     border-color: var(--color-border);
-  }
-
-  body,
-  header,
-  footer,
-  nav,
-  main,
-  section,
-  button,
-  a,
-  input,
-  textarea {
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
 
@@ -205,17 +193,11 @@
 }
 
 /* View Transition API Refinements */
-::view-transition-image-pair(root) {
-  isolation: isolate;
-}
-
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
   mix-blend-mode: normal;
   display: block;
-  will-change: clip-path, transform;
-  transform: translateZ(0);
 }
 
 ::view-transition-old(root) {
@@ -224,11 +206,6 @@
 
 ::view-transition-new(root) {
   z-index: 999;
-}
-
-html.theme-transitioning,
-html.theme-transitioning * {
-  transition: none !important;
 }
 
 /* Lenis CSS */

@@ -15,15 +15,12 @@ export function ThemeToggle() {
       return;
     }
 
-    const x = event.clientX || window.innerWidth / 2;
-    const y = event.clientY || 40;
-    const endRadius =
-      Math.hypot(
-        Math.max(x, window.innerWidth - x),
-        Math.max(y, window.innerHeight - y)
-      ) * 1.15;
-
-    document.documentElement.classList.add("theme-transitioning");
+    const x = event.clientX;
+    const y = event.clientY;
+    const endRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y)
+    );
 
     // @ts-ignore
     const transition = document.startViewTransition(() => {
@@ -41,15 +38,11 @@ export function ThemeToggle() {
           clipPath: clipPath,
         },
         {
-          duration: 750,
-          easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+          duration: 500,
+          easing: "ease-in-out",
           pseudoElement: "::view-transition-new(root)",
         }
       );
-    });
-
-    transition.finished.finally(() => {
-      document.documentElement.classList.remove("theme-transitioning");
     });
   };
 

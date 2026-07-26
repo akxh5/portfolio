@@ -41,8 +41,8 @@ export function ThemeToggle() {
           clipPath: clipPath,
         },
         {
-          duration: 550,
-          easing: "cubic-bezier(0.16, 1, 0.3, 1)",
+          duration: 750,
+          easing: "cubic-bezier(0.25, 1, 0.5, 1)",
           pseudoElement: "::view-transition-new(root)",
         }
       );

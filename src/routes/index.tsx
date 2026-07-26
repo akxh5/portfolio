@@ -52,7 +52,6 @@ function Index() {
 
   return (
     <main className="relative bg-background text-foreground">
-      <SiteNav />
       <Hero />
 
       <section ref={registryRef} className="mx-auto max-w-[1400px] pt-16 md:pt-32 pb-0">

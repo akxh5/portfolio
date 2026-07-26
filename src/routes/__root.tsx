@@ -111,6 +111,7 @@ function RootComponent() {
             <div className="pb-20 md:pb-0">
               <Outlet />
             </div>
+            <MobileTabBar />
           </SmoothScroll>
         </QueryClientProvider>
       </MusicProvider>

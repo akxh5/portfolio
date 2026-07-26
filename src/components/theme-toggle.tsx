@@ -15,12 +15,13 @@ export function ThemeToggle() {
       return;
     }
 
-    const x = event.clientX;
-    const y = event.clientY;
-    const endRadius = Math.hypot(
-      Math.max(x, window.innerWidth - x),
-      Math.max(y, window.innerHeight - y)
-    );
+    const x = event.clientX || window.innerWidth / 2;
+    const y = event.clientY || 40;
+    const endRadius =
+      Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y)
+      ) * 1.15;
 
     document.documentElement.classList.add("theme-transitioning");
 
@@ -40,8 +41,8 @@ export function ThemeToggle() {
           clipPath: clipPath,
         },
         {
-          duration: 500,
-          easing: "ease-in-out",
+          duration: 550,
+          easing: "cubic-bezier(0.16, 1, 0.3, 1)",
           pseudoElement: "::view-transition-new(root)",
         }
       );

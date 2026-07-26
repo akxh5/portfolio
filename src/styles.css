@@ -130,6 +130,8 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "ss01", "cv11";
+    position: relative;
+    width: 100%;
   }
 
   ::selection {

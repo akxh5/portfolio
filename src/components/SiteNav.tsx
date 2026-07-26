@@ -2,8 +2,6 @@ import { useState, useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import profilePic from "@/assets/Profile.webp";
 import { ThemeToggle } from "./theme-toggle";
-import { useTheme } from "./theme-provider";
-import { Menu, X } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrambleText } from "./ScrambleText";

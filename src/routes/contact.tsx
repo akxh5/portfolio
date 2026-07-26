@@ -40,8 +40,6 @@ const channels = [
 function ContactPage() {
   return (
     <main className="relative bg-background text-foreground min-h-screen">
-      <SiteNav />
-
       <section className="mx-auto max-w-[1400px] pt-24 md:pt-44 pb-16 px-6 md:px-10">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-2 lg:col-span-1 font-mono text-[11px] tracking-[0.3em] uppercase text-muted-foreground/60 pt-1">

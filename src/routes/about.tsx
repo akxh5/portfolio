@@ -155,15 +155,15 @@ function AboutPage() {
                   </h3>
                   <ul className="space-y-3.5 sm:space-y-5">
                     {group.items.map((item) => (
-                      <li key={item.name} className="group flex items-center gap-3">
-                        <div className="relative size-5 md:opacity-40 md:grayscale transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0">
+                      <li key={item.name} className="group flex items-center gap-2.5 sm:gap-3">
+                        <div className="relative size-4 sm:size-5 md:opacity-40 md:grayscale transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0 shrink-0">
                           <img 
                             src={`https://cdn.simpleicons.org/${item.icon}`} 
                             alt=""
                             className="size-full object-contain"
                           />
                         </div>
-                        <span className="font-mono text-[13px] tracking-tight text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                        <span className="font-mono text-[12px] sm:text-[13px] tracking-tight text-muted-foreground transition-colors duration-300 group-hover:text-foreground truncate">
                           {item.name}
                         </span>
                       </li>

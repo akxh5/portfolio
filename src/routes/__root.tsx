@@ -108,7 +108,7 @@ function RootComponent() {
       <MusicProvider>
         <QueryClientProvider client={queryClient}>
           <SmoothScroll>
-            <div className="pb-20 md:pb-0">
+            <div className="w-full max-w-full overflow-x-hidden pb-20 md:pb-0">
               <Outlet />
             </div>
             <MobileTabBar />

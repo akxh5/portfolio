@@ -183,7 +183,7 @@ export function Hero() {
 
       {/* Bottom rail */}
       <div className="hero-bottom absolute bottom-0 inset-x-0 bg-gradient-to-t from-background via-background/80 to-transparent pt-12">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10 py-6 flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] tracking-[0.22em] uppercase text-muted-foreground border-t border-border/40">
+        <div className="mx-auto max-w-[1400px] px-4 md:px-10 py-3 md:py-6 flex items-center justify-between gap-2 md:gap-4 font-mono text-[10px] tracking-[0.22em] uppercase text-muted-foreground border-t border-border/40">
           <div className="flex items-center gap-3">
             <span className="size-1 rounded-full bg-accent-soft/80" />
             <span className="hidden xs:inline">Scroll for selected work</span>

@@ -214,6 +214,8 @@
   animation: none;
   mix-blend-mode: normal;
   display: block;
+  will-change: clip-path, transform;
+  transform: translateZ(0);
 }
 
 ::view-transition-old(root) {

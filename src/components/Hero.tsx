@@ -190,7 +190,7 @@ export function Hero() {
             <span className="xs:hidden">Scroll</span>
           </div>
           
-          <div className="flex items-center gap-4 group cursor-default">
+          <div className="flex items-center gap-2 md:gap-4 shrink-0 group cursor-default ml-auto max-w-[65%] sm:max-w-none">
             <div className="flex items-center gap-3">
               <button 
                 onClick={() => setIsPlaying(!isPlaying)}

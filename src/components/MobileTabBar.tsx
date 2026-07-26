@@ -12,14 +12,14 @@ const tabs = [
 export function MobileTabBar() {
   const location = useLocation();
   return (
-    <nav className="md:hidden fixed bottom-0 inset-x-0 bg-background border-t border-border">
-      <div className="flex items-center justify-around py-2">
+    <nav className="md:hidden fixed bottom-0 inset-x-0 bg-background/80 backdrop-blur-xl border-t border-foreground/[0.08] px-2 pt-2">
+      <div className="grid grid-cols-5 items-center max-w-md mx-auto w-full">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           return (
-            <Link key={tab.to} to={tab.to} className="flex flex-col items-center">
+            <Link key={tab.to} to={tab.to} className="flex flex-col items-center justify-center gap-1 py-1">
               <Icon className="size-5" />
-              <span className="text-[10px]">{tab.label}</span>
+              <span className="font-mono text-[9px] tracking-[0.12em] uppercase">{tab.label}</span>
             </Link>
           );
         })}

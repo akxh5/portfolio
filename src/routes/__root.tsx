@@ -108,7 +108,9 @@ function RootComponent() {
       <MusicProvider>
         <QueryClientProvider client={queryClient}>
           <SmoothScroll>
-            <Outlet />
+            <div className="pb-20 md:pb-0">
+              <Outlet />
+            </div>
           </SmoothScroll>
         </QueryClientProvider>
       </MusicProvider>

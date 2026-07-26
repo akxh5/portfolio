@@ -19,7 +19,7 @@ export function MobileTabBar() {
   const currentPath = location.pathname;
 
   return (
-    <nav className="md:hidden fixed bottom-0 inset-x-0 bg-background/80 backdrop-blur-xl border-t border-foreground/[0.08] px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+    <nav className="md:hidden fixed bottom-0 inset-x-0 bg-background/80 backdrop-blur-xl border-t border-foreground/[0.08] px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] overflow-hidden">
       <div className="grid grid-cols-5 items-center max-w-md mx-auto w-full">
         {tabs.map((tab) => {
           const Icon = tab.icon;

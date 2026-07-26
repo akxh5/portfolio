@@ -55,7 +55,7 @@ function Index() {
       <SiteNav />
       <Hero />
 
-      <section ref={registryRef} className="mx-auto max-w-[1400px] pt-32 pb-0">
+      <section ref={registryRef} className="mx-auto max-w-[1400px] pt-16 md:pt-32 pb-0">
         <div className="px-6 md:px-10 flex items-end justify-between mb-16">
           <div className="space-y-4">
             <div className="font-mono text-[10px] tracking-[0.28em] uppercase text-muted-foreground/60">

@@ -210,9 +210,9 @@ export function Hero() {
                   )}
                 </div>
               </button>
-              <div className="flex flex-col">
-                <span className="text-foreground/90 tracking-[0.12em] text-[11px]">{currentTrack.title}</span>
-                <span className="text-[10px] text-muted-foreground/80 tracking-[0.16em]">{currentTrack.artist}</span>
+              <div className="flex flex-col min-w-0 max-w-[100px] sm:max-w-none">
+                <span className="text-foreground/90 tracking-[0.12em] text-[9.5px] md:text-[11px] truncate">{currentTrack.title}</span>
+                <span className="text-[8.5px] md:text-[10px] text-muted-foreground/80 tracking-[0.16em] truncate">{currentTrack.artist}</span>
               </div>
             </div>
 

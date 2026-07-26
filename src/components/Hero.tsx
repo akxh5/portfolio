@@ -120,7 +120,7 @@ export function Hero() {
             <span className="h-px w-6 bg-border-strong hidden sm:block" />
             <span>UTC +5:30</span>
             <span className="h-px w-6 bg-border-strong hidden sm:block" />
-            <div className="relative p-[1.5px] rounded-sm overflow-hidden group/hire">
+            <div className="relative p-[1.5px] rounded-sm overflow-hidden group/hire max-w-full shrink-0">
               <div 
                 className="absolute inset-[-200%] bg-[conic-gradient(from_0deg,transparent_0%,#4DA3FF_10%,#4DA3FF_20%,transparent_30%)] animate-revolve opacity-100" 
               />

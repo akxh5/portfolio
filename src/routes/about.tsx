@@ -149,11 +149,11 @@ function AboutPage() {
             
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-x-12 gap-y-10 lg:gap-y-16">
               {stackGroups.map((group) => (
-                <div key={group.category} className="space-y-8">
+                <div key={group.category} className="space-y-5 sm:space-y-8">
                   <h3 className="font-mono text-[9px] tracking-[0.2em] uppercase text-muted-foreground/50 border-b border-border/30 pb-3">
                     {group.category}
                   </h3>
-                  <ul className="space-y-5">
+                  <ul className="space-y-3.5 sm:space-y-5">
                     {group.items.map((item) => (
                       <li key={item.name} className="group flex items-center gap-3">
                         <div className="relative size-5 md:opacity-40 md:grayscale transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0">

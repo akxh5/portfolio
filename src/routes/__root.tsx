@@ -10,6 +10,7 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import profilePic from "@/assets/Profile.webp?url";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MusicProvider } from "@/components/MusicProvider";
+import { MobileTabBar } from "@/components/MobileTabBar";
 
 function NotFoundComponent() {
   return (

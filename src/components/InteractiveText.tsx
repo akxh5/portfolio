@@ -5,10 +5,10 @@ import { useGSAP } from "@gsap/react";
 export function InteractiveText({ children }: { children: string }) {
   const containerRef = useRef<HTMLParagraphElement>(null);
   const wordsRef = useRef<(HTMLSpanElement | null)[]>([]);
-  const [isDesktop, setIsDarkMode] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    setIsDarkMode(window.matchMedia("(pointer: fine)").matches);
+    setIsDesktop(window.matchMedia("(pointer: fine)").matches);
   }, []);
 
   const words = children.split(" ");
@@ -35,7 +35,6 @@ export function InteractiveText({ children }: { children: string }) {
         const proximity = Math.max(0, 1 - distance / radius);
 
         gsap.to(word, {
-          color: proximity > 0 ? "var(--foreground)" : "var(--muted-foreground)",
           opacity: 0.4 + proximity * 0.6,
           duration: 0.6,
           ease: "power2.out",
@@ -48,10 +47,10 @@ export function InteractiveText({ children }: { children: string }) {
       wordsRef.current.forEach((word) => {
         if (!word) return;
         gsap.to(word, {
-          color: "var(--muted-foreground)",
           opacity: 0.4,
           duration: 1,
           ease: "power2.out",
+          overwrite: "auto",
         });
       });
     };
@@ -73,10 +72,12 @@ export function InteractiveText({ children }: { children: string }) {
       {words.map((word, i) => (
         <span
           key={i}
-          ref={(el) => (wordsRef.current[i] = el)}
-          className="inline-block mr-[0.25em] transition-colors duration-300"
+          ref={(el) => {
+            wordsRef.current[i] = el;
+          }}
+          className="inline-block mr-[0.25em]"
           style={{ 
-            color: "var(--muted-foreground)",
+            color: "var(--foreground)",
             opacity: isDesktop ? 0.4 : 1 
           }}
         >
@@ -86,3 +87,4 @@ export function InteractiveText({ children }: { children: string }) {
     </p>
   );
 }
+

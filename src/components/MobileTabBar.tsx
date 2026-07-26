@@ -28,7 +28,7 @@ export function MobileTabBar() {
             <Link
               key={tab.to}
               to={tab.to}
-              className={`relative flex flex-col items-center justify-center gap-1 py-1.5 px-1 rounded-md ${
+              className={`relative flex flex-col items-center justify-center gap-1 py-1.5 px-1 rounded-md min-w-0 ${
                 isActive ? "text-foreground font-semibold" : "text-muted-foreground/60 hover:text-muted-foreground"
               }`}
             >

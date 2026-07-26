@@ -1,5 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { Home, FolderGit2, PenTool, User, Mail } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const tabs = [
   { to: "/", label: "Home", icon: Home, exact: true },
@@ -10,7 +11,11 @@ const tabs = [
 ] as const;
 
 export function MobileTabBar() {
+  const isMobile = useIsMobile();
   const location = useLocation();
+
+  if (!isMobile) return null;
+
   const currentPath = location.pathname;
 
   return (

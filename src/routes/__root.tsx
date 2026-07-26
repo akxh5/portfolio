@@ -11,6 +11,7 @@ import profilePic from "@/assets/Profile.webp?url";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MusicProvider } from "@/components/MusicProvider";
 import { MobileTabBar } from "@/components/MobileTabBar";
+import { SiteNav } from "@/components/SiteNav";
 
 function NotFoundComponent() {
   return (
@@ -108,6 +109,7 @@ function RootComponent() {
       <MusicProvider>
         <QueryClientProvider client={queryClient}>
           <SmoothScroll>
+            <SiteNav />
             <div className="w-full max-w-full overflow-x-hidden pb-20 md:pb-0">
               <Outlet />
             </div>

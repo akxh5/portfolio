@@ -22,6 +22,8 @@ export function ThemeToggle() {
       Math.max(y, window.innerHeight - y)
     );
 
+    document.documentElement.classList.add("theme-transitioning");
+
     // @ts-ignore
     const transition = document.startViewTransition(() => {
       setTheme(theme === "dark" ? "light" : "dark");
@@ -38,11 +40,15 @@ export function ThemeToggle() {
           clipPath: clipPath,
         },
         {
-          duration: 400,
-          easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+          duration: 500,
+          easing: "ease-in-out",
           pseudoElement: "::view-transition-new(root)",
         }
       );
+    });
+
+    transition.finished.finally(() => {
+      document.documentElement.classList.remove("theme-transitioning");
     });
   };
 

@@ -205,6 +205,10 @@
 }
 
 /* View Transition API Refinements */
+::view-transition-image-pair(root) {
+  isolation: isolate;
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
@@ -218,6 +222,11 @@
 
 ::view-transition-new(root) {
   z-index: 999;
+}
+
+html.theme-transitioning,
+html.theme-transitioning * {
+  transition: none !important;
 }
 
 /* Lenis CSS */

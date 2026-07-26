@@ -147,7 +147,7 @@ function AboutPage() {
               § Stack
             </h2>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-x-12 gap-y-10 lg:gap-y-16">
               {stackGroups.map((group) => (
                 <div key={group.category} className="space-y-8">
                   <h3 className="font-mono text-[9px] tracking-[0.2em] uppercase text-muted-foreground/50 border-b border-border/30 pb-3">

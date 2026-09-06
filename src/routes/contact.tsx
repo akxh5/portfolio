@@ -76,7 +76,7 @@ function ContactPage() {
                 <span className="col-span-7 md:col-span-8 font-serif text-2xl md:text-4xl tracking-tight text-foreground/90 group-hover:text-foreground transition-colors">
                   {c.value}
                 </span>
-                <span className="col-span-1 text-right font-mono text-[11px] tracking-[0.16em] uppercase text-muted-foreground/40 group-hover:text-accent-soft transition-colors group-hover:transla[...]
+                <span className="col-span-1 text-right font-mono text-[11px] tracking-[0.16em] uppercase text-muted-foreground/40 group-hover:text-accent-soft transition-colors transform group-hover:translate-x-1">
                   →
                 </span>
               </a>

@@ -14,7 +14,7 @@ export const writings: WritingEntry[] = [
     index: "01",
     title: "THE SOLANA MOBILE REVOLUTION: FROM PROMISE TO REALITY",
     description:
-      "Exploring Solana’s mobile push, ecosystem direction, and the gap between infrastructure ambition and real-world adoption.",
+      "Exploring Solana's mobile push, ecosystem direction, and the gap between infrastructure ambition and real-world adoption.",
     platform: "Notion · Research Essay",
     link: "https://www.notion.so/THE-SOLANA-MOBILE-REVOLUTION-FROM-PROMISE-TO-REALITY-22e0a783cf0780899a02cefc8b8efc5d",
     cta: "Read Essay →",
@@ -22,7 +22,7 @@ export const writings: WritingEntry[] = [
   {
     id: "virality-nexus",
     index: "02",
-    title: "The Dual-Platform Virality Nexus: AI’s Transformative Societal Impact on X and Medium",
+    title: "The Dual-Platform Virality Nexus: AI's Transformative Societal Impact on X and Medium",
     description:
       "Observations on AI-driven virality, platform behavior, and how algorithmic systems reshape online discourse.",
     platform: "Medium · Long-form Essay",
@@ -32,9 +32,9 @@ export const writings: WritingEntry[] = [
   {
     id: "solana-ecosystem",
     index: "03",
-    title: "Inside the Solana Ecosystem: Why It’s More Than Just a Fast Chain",
+    title: "Inside the Solana Ecosystem: Why It's More Than Just a Fast Chain",
     description:
-      "A broader look into Solana’s ecosystem architecture, applications, and infrastructure beyond transaction throughput.",
+      "A broader look into Solana's ecosystem architecture, applications, and infrastructure beyond transaction throughput.",
     platform: "Medium · Ecosystem Analysis",
     link: "https://medium.com/@aksh11ansh/inside-the-solana-ecosystem-why-its-more-than-just-a-fast-chain-afcd41a38418",
     cta: "Read Essay →",
@@ -44,7 +44,7 @@ export const writings: WritingEntry[] = [
     index: "04",
     title: "How Monad Rebuilt the EVM for Speed",
     description:
-      "Breaking down Monad’s parallel execution architecture and the engineering decisions behind high-performance EVM compatibility.",
+      "Breaking down Monad's parallel execution architecture and the engineering decisions behind high-performance EVM compatibility.",
     platform: "Substack · Protocol Breakdown",
     link: "https://open.substack.com/pub/elysiumre/p/how-monad-rebuilt-the-evm-for-speed",
     cta: "Read Essay →",
@@ -55,7 +55,7 @@ export const writings: WritingEntry[] = [
     title: "Determinism Is a Character Trait.",
     description: "Ask a security team when they last thought about a contract or a program, and most will tell you about the audit. A fixed date, a fixed scope, a report that was ...",
     platform: "X · Article",
-    link: "https://x.com/akshansh/status/2073038101249966159",
+    link: "https://x.com/akxh_5/status/2073038101249966159",
     cta: "Read Article →",
   },
   {
@@ -64,7 +64,7 @@ export const writings: WritingEntry[] = [
     title: "The Money Was Never the Weak Point.",
     description: "Two of the largest DeFi losses in history happened eighteen days apart this year, and neither one started with a line of bad code....",
     platform: "X · Article",
-    link: "https://x.com/akshansh/status/2074424637505835325",
+    link: "https://x.com/akxh_5/status/2074424637505835325",
     cta: "Read Article →",
   },
 ];
